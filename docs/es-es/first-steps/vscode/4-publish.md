@@ -16,6 +16,8 @@ En esta lección:
 
 ## Inicializa, crea un commit y publica
 
+Inicializa el repositorio y publica los cambios para que el cuestionario esté disponible en GitHub.
+
 1. Abre **Source Control** y selecciona **Initialize Repository**.
 2. Prepara los archivos para el commit.
 3. Selecciona el icono **sparkle pencil** en el cuadro del mensaje del commit para que Copilot escriba el mensaje a partir de las diferencias preparadas. Lee el mensaje, corrige lo que no sea correcto y crea el commit.

@@ -16,12 +16,14 @@ En esta lección:
 
 ## Acuerda el enfoque antes de modificar nada
 
+Usa el modo de planificación para revisar el enfoque de Copilot antes de que realice cambios.
+
 1. Cambia a la **segunda sesión** que abriste en la lección anterior.
 2. Ejecuta `/plan` para cambiar esa sesión al modo de planificación.
 3. Envía el siguiente prompt y deja que el agente investigue sin editar nada:
 
    ```plaintext
-   Plan how to implement this issue. Investigate the existing quiz, list the files you would change, call out risks to accessibility and the single-file constraint, and stop before making any edits.
+   Planifica cómo implementar esta incidencia. Investiga el cuestionario existente, enumera los archivos que cambiarías, señala los riesgos para la accesibilidad y para la restricción de un solo archivo, y detente antes de editar nada.
    ```
 
 4. Lee el plan, señala cualquier carencia y apruébalo.

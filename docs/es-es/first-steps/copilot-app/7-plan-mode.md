@@ -16,12 +16,14 @@ En esta lección:
 
 ## Acuerda el enfoque antes de cambiar el código
 
+Usa el modo de planificación para decidir cómo resolver una incidencia antes de pedirle a Copilot que modifique el código.
+
 1. Abre una **segunda incidencia** desde **Issues** y selecciona **New session**.
 2. En la configuración de la sesión, elige **Plan** en lugar de **Interactive** o **Autopilot**.
 3. Envía el siguiente prompt y deja que el agente investigue sin modificar archivos:
 
    ```plaintext
-   Plan how to implement this issue. Investigate the existing quiz, list the files you would change, call out risks to accessibility and the single-file constraint, and stop before making any edits.
+   Planifica cómo implementar esta incidencia. Investiga el cuestionario existente, enumera los archivos que cambiarías, señala los riesgos para la accesibilidad y para la restricción de un solo archivo, y detente antes de editar nada.
    ```
 
 4. Lee el plan propuesto y solicita cambios si falta algo.

@@ -20,7 +20,7 @@ En esta lección:
 Envía el siguiente prompt:
 
 ```plaintext
-Review the space quiz and suggest three focused feature ideas that could each be completed in a short session. Create a separate GitHub issue for each idea with a clear title, user-focused description, and acceptance criteria. Do not implement them yet.
+Revisa el cuestionario espacial y sugiere tres ideas concretas de funcionalidades, cada una realizable en una sesión breve. Crea una incidencia de GitHub independiente para cada idea, con un título claro, una descripción centrada en el usuario y criterios de aceptación. No las implementes todavía.
 ```
 
 Abre **Issues**, revisa las tres incidencias y elige una que aporte un valor claro y tenga un alcance manejable.
@@ -31,6 +31,8 @@ Abre **Issues**, revisa las tres incidencias y elige una que aporte un valor cla
 
 ## Implementa una incidencia
 
+Inicia una sesión a partir de una incidencia para que Copilot pueda trabajar con sus requisitos y contexto.
+
 1. Abre la incidencia seleccionada desde **Issues**.
 2. Selecciona **New session**.
 3. Elige un **nuevo árbol de trabajo** cuando se te solicite.
@@ -38,7 +40,7 @@ Abre **Issues**, revisa las tres incidencias y elige una que aporte un valor cla
 5. Envía el siguiente prompt:
 
    ```plaintext
-   Implement this issue completely. Keep the single-file, dependency-free design, test the behavior in the integrated browser, and summarize the changes when finished.
+   Implementa esta incidencia por completo. Mantén el diseño de un solo archivo y sin dependencias, prueba el comportamiento en el navegador integrado y resume los cambios al terminar.
    ```
 
 El nuevo árbol de trabajo mantiene esta funcionalidad aislada de la rama predeterminada hasta que estés listo para revisarla y combinarla.

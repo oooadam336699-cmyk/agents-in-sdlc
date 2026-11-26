@@ -19,7 +19,7 @@ En esta lección:
 Envía el siguiente prompt:
 
 ```plaintext
-Initialize this folder as a Git repository, create an initial commit, and create a new public GitHub repository named space-quiz in my account. Push the current branch and set it as the default branch.
+Inicializa esta carpeta como un repositorio de Git, crea el commit inicial y crea en mi cuenta un repositorio público de GitHub llamado space-quiz. Sube la rama actual y configúrala como rama predeterminada.
 ```
 
 Aprueba cada acción de Git y GitHub cuando el agente lo solicite.
@@ -38,6 +38,8 @@ Añade el prefijo `!` a cada comando para ejecutarlo desde la sesión o ejecuta 
 El último comando utiliza la [GitHub CLI][gh-cli]. Si no la tienes, crea el repositorio en GitHub y ejecuta `!git remote add origin <url>` y `!git push -u origin main`.
 
 ## Confirma el resultado
+
+Comprueba que el cambio se ha confirmado correctamente antes de compartir el repositorio.
 
 1. Ejecuta `!git log --oneline` para confirmar que el commit se ha incorporado.
 2. Abre el repositorio en GitHub y confirma que `index.html` está presente.

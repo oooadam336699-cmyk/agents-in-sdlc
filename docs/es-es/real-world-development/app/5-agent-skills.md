@@ -31,6 +31,8 @@ Las habilidades pueden residir en la carpeta `.github/skills` de un proyecto par
 
 ## Explorar la habilidad
 
+Abre la habilidad de control de calidad en el lienzo para examinar las instrucciones que aporta al agente.
+
 1. Si todavía no tienes abierto un lienzo **Files**, selecciona **+** en el panel de revisión y, después, **File**.
 2. Busca `.github/skills/quality-checks/SKILL.md`.
 3. Lee `name` y `description` al principio. Observa que la descripción ayuda a Copilot a comprender cuándo debe invocar la habilidad.
@@ -44,7 +46,7 @@ Las habilidades se pueden invocar directamente mediante un comando con barra dia
 2. Utiliza la indicación siguiente para invocar la habilidad:
 
     ```plaintext
-    Run the quality-checks skill for unit tests, lint, and type checks.
+    Ejecuta la habilidad quality-checks para las pruebas unitarias, lint y las comprobaciones de tipos.
     ```
 
 3. Observa el informe final.
@@ -58,9 +60,9 @@ Queremos un informe mejor que indique qué se ha ejecutado, si ha tenido éxito 
 3. Añade la siguiente sección al final del archivo:
 
     ```markdown
-    ## Results output formatting
+    ## Formato del informe de resultados
 
-    Upon completion, report each command that ran and whether it passed, failed, or was blocked. Include test counts, durations, errors, warnings, and other metrics only when the tool reports them. Identify the next action for any failure or blocker, and never describe a skipped or incomplete check as passed.
+    Al terminar, informa de cada comando ejecutado y de si se ha superado, ha fallado o ha quedado bloqueado. Incluye recuentos de pruebas, duración, errores, advertencias y otras métricas solo cuando la herramienta las comunique. Indica el siguiente paso ante cualquier error o bloqueo y nunca describas como superada una comprobación omitida o incompleta.
     ```
 
 El archivo se guardará automáticamente.
@@ -73,7 +75,7 @@ Una vez realizado el cambio, veamos cómo funciona. Utilizaremos exactamente la 
 2. Utiliza la indicación siguiente para invocar la habilidad:
 
     ```plaintext
-    Run the quality-checks skill for unit tests, lint, and type checks.
+    Ejecuta la habilidad quality-checks para las pruebas unitarias, lint y las comprobaciones de tipos.
     ```
 
 3. Observa el informe final.
@@ -86,7 +88,7 @@ Has personalizado y utilizado una habilidad de agente existente. En esta lecció
 - has personalizado el formato de sus resultados.
 - has ejecutado la habilidad y revisado su salida.
 
-Este cambio acompañará al filtrado en la PR de la funcionalidad. A continuación, permitirás que Copilot interactúe directamente con el sitio [mediante el servidor MCP de Playwright][next-lesson].
+Este cambio acompañará al filtrado en la solicitud de incorporación de cambios (PR) de la funcionalidad. A continuación, permitirás que Copilot interactúe directamente con el sitio mediante el servidor Model Context Protocol (MCP) de Playwright en la [siguiente lección][next-lesson].
 
 ## Más ejemplos de habilidades
 

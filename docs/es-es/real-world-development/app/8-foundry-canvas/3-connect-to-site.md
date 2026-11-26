@@ -36,12 +36,12 @@ Tailspin Toys está completamente prerrenderizado. El código del navegador nunc
 El proxy es la única parte del código que puede acceder a las credenciales de Azure. En este taller, la función y el sitio se ejecutan en local, y el servidor de desarrollo de Astro reenvía las solicitudes de `/api` a la función.
 
 > [!IMPORTANT]
-> Este proxy del taller es solo para desarrollo local. No debe implementarse como un punto de conexión público anónimo. Una integración de producción necesita un diseño de autenticación y control de abusos específico de la aplicación que incluya límites de frecuencia o cuotas adecuados, restricciones de CORS, supervisión y controles de costes.
+> Este proxy del taller es solo para desarrollo local. No debe implementarse como un punto de conexión público anónimo. Una integración de producción necesita un diseño de autenticación y control de abusos específico de la aplicación que incluya límites de frecuencia o cuotas adecuados, restricciones de intercambio de recursos de origen cruzado (CORS), supervisión y controles de costes.
 
 3. En la misma sesión de Copilot, introduce:
 
    ```plaintext
-   Add a local Azure Functions proxy in api for the static Astro site to call my deployed Backer Concierge during development. Use my existing local Azure sign-in, keep credentials and Foundry conversation identifiers out of the browser, return an opaque conversation handle, validate requests, sanitize errors, and add focused tests. Configure the Astro development server so /api requests reach the local Function. Don't create public deployment infrastructure.
+   Añade en api un proxy local de Azure Functions para que el sitio estático de Astro pueda llamar al Backer Concierge desplegado durante el desarrollo. Utiliza mi inicio de sesión local de Azure, mantén las credenciales y los identificadores de conversación de Foundry fuera del navegador, devuelve una referencia opaca a la conversación, valida las solicitudes, sanea los errores y añade pruebas específicas. Configura el servidor de desarrollo de Astro para que las solicitudes a /api lleguen a la función local. No crees infraestructura de implementación pública.
    ```
 
 4. Revisa el proxy generado y las pruebas específicas para comprobar la validación de solicitudes, los errores sin datos sensibles, las referencias opacas a las conversaciones y el límite de protección de credenciales exclusivo del servidor. Pide a Copilot que ejecute las pruebas específicas y corrija cualquier fallo.
@@ -49,7 +49,7 @@ El proxy es la única parte del código que puede acceder a las credenciales de 
 6. Vuelve al chat y pide a Copilot que pruebe el proxy local:
 
    ```plaintext
-   Test the local /api/concierge endpoint by asking "Which games are under $30?" Show me the sanitized response and confirm that no credentials or internal conversation identifiers are returned.
+   Prueba el punto de conexión local /api/concierge preguntando «¿Qué juegos cuestan menos de 30 dólares?». Muéstrame la respuesta saneada y confirma que no se devuelven credenciales ni identificadores internos de conversación.
    ```
 
 7. Inspecciona la respuesta: debería explicar que el catálogo no contiene precios. Confirma que no contiene ningún token de Foundry, credencial, identificador interno de conversación, punto de conexión del proyecto ni traza de la pila. Si no se puede acceder a la función, o la respuesta filtra detalles o inventa precios, envía el fallo sin datos sensibles a Copilot, corrígelo y vuelve a ejecutar las pruebas del proxy antes de continuar.
@@ -63,14 +63,14 @@ Con el proxy en ejecución, el widget muestra la conversación en el sitio sin e
 8. Pide a Copilot que cree la integración del sitio:
 
    ```plaintext
-   Add an accessible Backer Concierge chat widget to the Astro site. Connect it to /api/concierge, preserve the conversation using the returned opaque handle, follow the existing design guidance, support keyboard use, keep Foundry details out of the browser, and add end-to-end tests covering the chat flow, conversation continuity, accessibility, error handling, and grounding boundaries.
+   Añade al sitio de Astro un widget de chat accesible para Backer Concierge. Conéctalo a /api/concierge, conserva la conversación mediante la referencia opaca devuelta, sigue las directrices de diseño existentes, permite el uso con teclado, mantén los detalles de Foundry fuera del navegador y añade pruebas de extremo a extremo que cubran el flujo del chat, la continuidad de la conversación, la accesibilidad, el tratamiento de errores y los límites de fundamentación.
    ```
 
 9. Inicia el servidor de desarrollo de Astro en otro terminal con el comando proporcionado por Copilot. Mantén en ejecución tanto el sitio como la función local.
 10. Pide a Copilot que ejecute las pruebas de extremo a extremo:
 
     ```plaintext
-    Run the end-to-end tests for the Backer Concierge widget in the Tailspin Toys site. Verify its core chat flow, conversation continuity, accessibility, error handling, grounding boundaries, and secure use of the local proxy. Report the results and include evidence for any failures.
+    Ejecuta las pruebas de extremo a extremo del widget Backer Concierge en el sitio de Tailspin Toys. Verifica el flujo principal del chat, la continuidad de la conversación, la accesibilidad, el tratamiento de errores, los límites de fundamentación y el uso seguro del proxy local. Informa de los resultados e incluye pruebas de cualquier fallo.
     ```
 
 11. Revisa el informe y verifica en el navegador el comportamiento que describe, incluido el uso del teclado y la conversación de dos turnos de las [comprobaciones de aceptación del agente hospedado][agent-checks]. Confirma que las solicitudes del navegador pasan por `/api/concierge` con una referencia opaca, no directamente a Foundry, y que las respuestas no exponen credenciales ni identificadores internos de Foundry. Comprueba que las recomendaciones y las respuestas sobre datos ausentes se mantengan dentro de los límites del catálogo. Resuelve las pruebas fallidas con Copilot, reinicia el servicio local afectado si es necesario y vuelve a ejecutar las pruebas.
@@ -79,7 +79,13 @@ Con el proxy en ejecución, el widget muestra la conversación en el sitio sin e
 
 ## Punto de control y pasos siguientes
 
-Has creado un proxy local que protege las credenciales, conectado un widget de chat accesible y verificado el flujo completo de la conversación con el Backer Concierge hospedado. El punto de control de este módulo es una integración del sitio web probada en local que conserva los límites del catálogo y mantiene las credenciales y los identificadores internos de Foundry fuera del navegador. No es una implementación de producción del proxy ni del sitio.
+En este módulo:
+
+- has creado un proxy local de Azure Functions que protege las credenciales y los identificadores de conversación.
+- has conectado al sitio un widget de chat accesible con comportamiento de extremo a extremo verificado.
+- has comprobado en local la integración y el punto de control de limpieza de recursos.
+
+El punto de control es una integración del sitio web probada en local que conserva los límites del catálogo y mantiene las credenciales y los identificadores internos de Foundry fuera del navegador. No es una implementación de producción del proxy ni del sitio.
 
 Cuando termines de experimentar, detén ambos servicios locales y [limpia los recursos de Azure][cleanup]. Después, continúa con [Repaso y pasos siguientes][core-review] en la ruta principal del taller.
 

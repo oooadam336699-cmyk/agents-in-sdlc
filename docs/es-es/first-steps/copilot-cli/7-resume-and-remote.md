@@ -16,6 +16,8 @@ En esta lección:
 
 ## Sal de una sesión y vuelve más tarde
 
+Guarda el estado de la sesión para poder volver a ella cuando retomes la tarea.
+
 1. Sal de la sesión actual de Copilot CLI cuando estés listo para cambiar de tarea.
 2. Desde una terminal, ejecuta `copilot --resume` para elegir una sesión anterior.
 3. Dentro de Copilot CLI, utiliza `/resume` para cambiar entre sesiones sin salir de la CLI.

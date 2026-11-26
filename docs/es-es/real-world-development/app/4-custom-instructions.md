@@ -31,7 +31,7 @@ Las instrucciones personalizadas permiten proporcionar contexto y preferencias a
 
 Hay dos tipos de archivos de instrucciones:
 
-- `.github/copilot-instructions.md`, un único archivo de instrucciones que se envía a Copilot con **cada** solicitud del repositorio. Debe contener información del proyecto que sea pertinente para la mayoría de las solicitudes de chat o CLI enviadas a Copilot, como la pila tecnológica, una descripción general de lo que se está creando, procedimientos recomendados y otras directrices globales.
+- `.github/copilot-instructions.md`, un único archivo de instrucciones que se envía a Copilot con **cada** solicitud del repositorio. Debe contener información del proyecto que sea pertinente para la mayoría de las solicitudes de chat o de interfaz de línea de comandos (CLI) enviadas a Copilot, como la pila tecnológica, una descripción general de lo que se está creando, procedimientos recomendados y otras directrices globales.
 - Los archivos `.github/instructions/*.instructions.md` se pueden crear para tareas o tipos de archivo concretos. Puedes utilizarlos para proporcionar directrices para lenguajes específicos, como TypeScript o Astro, o para tareas como crear un componente de interfaz de usuario o un nuevo conjunto de pruebas unitarias.
 
 > [!NOTE]
@@ -64,11 +64,12 @@ Aunque los archivos existentes son un buen punto de partida, todavía hay alguna
 > Como los archivos de instrucciones influyen mucho en el código que genera Copilot, debes asegurarte de que lo orienten con claridad. Puedes pedir a Copilot que cree una primera versión y, después, revisarla para comprobar que las actualizaciones cumplen los requisitos. También puedes consultar una [colección de archivos de instrucciones en Awesome Copilot][awesome-copilot] como punto de partida.
 
 1. En el mismo lienzo de archivos, ve a `.github/copilot-instructions.md`.
-2. Busca el encabezado **Code formatting requirements**, aproximadamente a mitad del archivo.
-3. Añade lo siguiente como último punto debajo de ese encabezado:
+2. Cambia a la vista de origen editable seleccionando el botón de código (el icono `<>`) en la barra de herramientas del archivo.
+3. Busca el encabezado **Code formatting requirements**, aproximadamente a mitad del archivo.
+4. Añade lo siguiente como último punto debajo de ese encabezado:
 
    ```plaintext
-   All new TypeScript should contain TSDocs comments for documentation purposes.
+   Todo el código TypeScript nuevo debe incluir comentarios TSDoc con fines de documentación.
    ```
 
 El archivo se guarda automáticamente y está listo para usarlo.
@@ -83,7 +84,7 @@ Con el archivo de instrucciones actualizado, observa su efecto en el código que
 1. Pide a Copilot que utilice los archivos de instrucciones para adaptar el código a los nuevos requisitos:
 
    ```plaintext
-   We just updated our instructions and code guidance. Can you please update the code you generated to match that guidance?
+   Acabamos de actualizar las instrucciones y las directrices del código. ¿Puedes actualizar el código que has generado para que se ajuste a ellas?
    ```
 
 2. Selecciona **Changes** en la esquina superior derecha para abrir los cambios de código.

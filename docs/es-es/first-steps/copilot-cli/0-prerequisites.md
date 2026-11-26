@@ -31,6 +31,8 @@ La [GitHub CLI][gh-cli] (`gh`) es opcional, pero recomendable, porque permite qu
 
 ## Configura la CLI
 
+Instala GitHub Copilot CLI y verifica que puedes ejecutarlo desde la terminal.
+
 1. Instala [GitHub Copilot CLI][install-cli] para tu plataforma.
 2. Crea la carpeta del proyecto y entra en ella:
 

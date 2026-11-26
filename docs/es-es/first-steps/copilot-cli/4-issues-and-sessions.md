@@ -20,10 +20,12 @@ En esta lección:
 Envía el siguiente prompt:
 
 ```plaintext
-Review the space quiz and create three focused GitHub issues with clear titles, user-focused descriptions, and acceptance criteria. Do not implement them yet.
+Revisa el cuestionario espacial y crea tres incidencias concretas en GitHub con títulos claros, descripciones centradas en el usuario y criterios de aceptación. No las implementes todavía.
 ```
 
 ## Trabaja en la primera incidencia en esta sesión
+
+Abre una incidencia desde el panel lateral para que Copilot pueda trabajar a partir de sus requisitos.
 
 1. Pulsa la tecla <kbd>Left arrow</kbd> para abrir el panel lateral y, después, pulsa <kbd>Tab</kbd> para desplazarte a la pestaña **Issues**.
 2. Resalta la primera incidencia y pulsa <kbd>c</kbd> para añadirla al chat como contexto. Para leer primero la incidencia completa, pulsa <kbd>Enter</kbd> en su lugar.
@@ -42,6 +44,8 @@ El proyecto está publicado, así que hay una versión cuyo funcionamiento has c
 3. Ejecuta `!git status` o `!git diff` cuando quieras inspeccionar Git directamente.
 
 ## Trabaja en la segunda incidencia en paralelo
+
+Inicia otra sesión para trabajar en una incidencia distinta sin interrumpir el trabajo de la primera.
 
 1. Abre de nuevo el panel lateral y cambia a la pestaña **Sessions**.
 2. Inicia otra sesión para la segunda incidencia sin perder la primera.

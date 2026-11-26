@@ -16,6 +16,8 @@ En esta lección:
 
 ## Recoge las reglas con `/init`
 
+Genera un primer borrador de instrucciones para el proyecto y revísalo antes de guardarlo.
+
 1. Ejecuta `/init create simple rules for the project` en Copilot Chat.
 2. Revisa el archivo `.github/copilot-instructions.md` generado antes de guardarlo.
 3. Conserva solo las directrices que correspondan a este proyecto: un único archivo, sin dependencias, accesible y probado en el explorador.

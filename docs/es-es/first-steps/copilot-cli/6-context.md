@@ -16,6 +16,8 @@ En esta lección:
 
 ## Inspecciona el contexto
 
+Consulta el contexto de la sesión para entender qué información está usando Copilot y cuándo conviene compactarla.
+
 1. Ejecuta `/context` para inspeccionar archivos, instrucciones e historial de conversación.
 2. Comprueba cuánto ocupa cada parte de la ventana.
 3. Ejecuta `/clear` para empezar de cero cuando la conversación se haya desviado.

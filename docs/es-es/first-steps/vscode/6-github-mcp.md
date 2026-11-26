@@ -16,6 +16,8 @@ En esta lección:
 
 ## Habilita GitHub MCP
 
+Configura la conexión a GitHub para que Copilot Chat pueda consultar el repositorio durante la conversación.
+
 1. Abre **Settings** de VS Code y habilita el servidor integrado **GitHub MCP**, si tu versión lo incluye.
 2. En caso contrario, instala un servidor MCP de GitHub de confianza mediante el [flujo de configuración de servidores MCP][mcp-servers].
 3. Revisa las herramientas y los permisos que solicita el servidor antes de aprobarlo.

@@ -17,6 +17,8 @@ En esta lección:
 
 ## Instala el Canvas de Repository Issues Kanban
 
+Añade el Canvas para visualizar y organizar las incidencias del proyecto.
+
 1. Explora la [galería de extensiones de Canvas][canvas-gallery].
 2. Abre la [extensión Repository Issues Kanban][kanban-extension].
 3. Selecciona **Install in GitHub Copilot app** y aprueba la instalación.
@@ -24,6 +26,8 @@ En esta lección:
 5. Confirma que la extensión está instalada.
 
 ## Empieza a trabajar desde el Canvas
+
+Abre una sesión desde el Canvas y úsala para organizar el trabajo en las incidencias.
 
 1. Selecciona **New session** para el Canvas.
 2. Elige el proyecto `space-quiz`.

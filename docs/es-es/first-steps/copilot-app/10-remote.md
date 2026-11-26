@@ -16,6 +16,8 @@ En esta lección:
 
 ## Continúa una sesión de forma remota
 
+Abre una sesión existente desde otro dispositivo para continuar el trabajo sin perder el contexto.
+
 1. Abre una sesión que tenga trabajo en curso.
 2. Ejecuta `/remote` para que esa sesión esté disponible de forma remota.
 3. Abre en el explorador el enlace que devuelve o accede a la sesión desde la aplicación móvil GitHub Copilot.

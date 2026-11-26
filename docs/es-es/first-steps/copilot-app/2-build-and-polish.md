@@ -20,7 +20,7 @@ En esta lección:
 Envía el siguiente prompt en tu sesión `space-quiz`:
 
 ```plaintext
-Create a space exploration quiz with 10 questions, a progress bar, score counter, and colorful animated feedback (green for correct, red shake for wrong). Show a results screen with emoji reaction at the end. Center in a narrow column. Single index.html, no server/dependencies. Polished, sans-serif, 14–16px body, prefers-color-scheme. Open in the integrated browser.
+Crea un cuestionario sobre la exploración espacial con 10 preguntas, una barra de progreso, un contador de puntuación y animaciones coloridas para las respuestas (verde si es correcta y una sacudida roja si es incorrecta). Al final, muestra una pantalla de resultados con una reacción mediante emoji. Centra el contenido en una columna estrecha. Usa un único archivo index.html, sin servidor ni dependencias. Dale un acabado cuidado, utiliza una fuente sans-serif y un tamaño de texto de 14–16px, y respeta prefers-color-scheme. Ábrelo en el explorador integrado.
 ```
 
 Cuando el agente termine, responde a varias preguntas y confirma que:
@@ -37,12 +37,14 @@ Contrae la barra lateral izquierda y el panel del explorador de la derecha y, de
 
 ## Perfecciona con el selector de elementos
 
+Selecciona una parte concreta de la página para pedir cambios específicos sin describirla desde cero.
+
 1. Selecciona el selector de elementos en la barra de herramientas del explorador.
 2. Selecciona el encabezado del cuestionario o el área de respuestas.
 3. Envía el siguiente prompt:
 
    ```plaintext
-   Make the selected element feel more like a mission-control display. Keep it accessible and preserve the existing light and dark themes.
+   Haz que el elemento seleccionado parezca más una pantalla de control de misión. Mantén la accesibilidad y conserva los temas claro y oscuro existentes.
    ```
 
 4. Observa cómo se actualiza el explorador integrado y comprueba el cambio.

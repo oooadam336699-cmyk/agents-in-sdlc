@@ -17,6 +17,8 @@ En esta lección:
 
 ## Crea, revisa y combina
 
+Inspecciona el diff, crea una solicitud de incorporación de cambios y revísala antes de combinarla.
+
 1. Ejecuta `/diff` para inspeccionar los archivos modificados por última vez.
 2. Pide a Copilot que cree una solicitud de incorporación de cambios desde la rama actual o ejecuta `/pr create`.
 3. Abre la pestaña **Pull requests** del panel lateral para comprobar el título, la descripción, los archivos y las comprobaciones de estado.

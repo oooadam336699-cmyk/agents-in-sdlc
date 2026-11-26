@@ -16,6 +16,8 @@ En esta lección:
 
 ## Crea el área de trabajo
 
+Prepara el espacio de trabajo que contendrá el proyecto y las sesiones de Copilot.
+
 1. Abre la aplicación GitHub Copilot y confirma que has iniciado sesión.
 2. Selecciona **New**, después **Open folder**, y elige una carpeta vacía llamada `space-quiz`. Si no existe, créala primero.
 3. Establece el modo de sesión en **Interactive**.

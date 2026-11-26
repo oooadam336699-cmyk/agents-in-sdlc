@@ -16,12 +16,14 @@ En esta lección:
 
 ## Acuerda el enfoque antes de modificar nada
 
+Utiliza el modo de planificación para acordar los cambios antes de que Copilot edite el proyecto.
+
 1. Abre Copilot Chat y utiliza el **menú desplegable de modos** situado encima del cuadro de entrada.
 2. Cambia de **Agent** a **Plan**.
 3. Describe la siguiente funcionalidad con este prompt y deja que Copilot investigue el área de trabajo:
 
    ```plaintext
-   Plan how to add a review screen that shows every question with the answer I chose. Investigate the existing quiz, list the changes you would make, call out accessibility and single-file risks, and stop before editing.
+   Planifica cómo añadir una pantalla de revisión que muestre todas las preguntas y la respuesta que elegí. Investiga el cuestionario existente, enumera los cambios que harías, señala los riesgos relacionados con la accesibilidad y la restricción de un solo archivo, y detente antes de editar.
    ```
 
 4. Lee el plan y solicita cambios; después, vuelve a **Agent** para implementarlo.

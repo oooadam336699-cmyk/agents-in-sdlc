@@ -29,6 +29,8 @@ Necesitas:
 
 ## Configura VS Code
 
+Instala VS Code, inicia sesión y verifica que Copilot Chat está disponible antes de continuar.
+
 1. Instala [VS Code][vscode] e inicia sesión en GitHub. Copilot y Copilot Chat están integrados, así que abre la vista **Chat** desde la barra de título y confirma que responde.
 2. Abre la vista **Extensions** e instala la extensión oficial [GitHub Pull Requests and Issues][pr-extension] para que las incidencias y las solicitudes de incorporación de cambios aparezcan en la barra lateral.
 3. Crea una carpeta vacía llamada `space-quiz`, selecciona **File** > **Open Folder** y ábrela.

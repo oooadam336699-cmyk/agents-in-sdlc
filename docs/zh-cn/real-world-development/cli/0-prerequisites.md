@@ -1,8 +1,9 @@
 ---
 title: "练习 0：先决条件"
+description: "创建 Tailspin Toys 仓库副本，并为 Copilot CLI 研讨会准备 GitHub Codespace。"
 authors:
   - geektrainer
-lastUpdated: 2026-06-30
+lastUpdated: 2026-09-18
 ---
 
 开始 Copilot CLI 练习前，需要先完成环境准备。将先创建 Tailspin Toys 存储库的个人副本，再启动一个 [codespace][codespaces]。下一节练习会使用其中集成的终端来安装并运行 Copilot CLI。

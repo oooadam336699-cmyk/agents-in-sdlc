@@ -34,6 +34,8 @@ La aplicación incluye Git, así que no hay nada más que instalar.
 
 ## Instala y configura la aplicación
 
+Instala la aplicación y comprueba que puedes iniciar sesión antes de crear el proyecto.
+
 1. Descarga e instala la [aplicación GitHub Copilot][download-app] para tu sistema operativo.
 2. Abre la aplicación.
 3. Selecciona **Sign in to GitHub** y autentícate.
@@ -67,7 +69,7 @@ No todas las preguntas necesitan un área de trabajo. Desde **New**, elige **Cha
 Envía el siguiente prompt en un chat:
 
 ```plaintext
-How does the GitHub Copilot app use worktrees?
+¿Cómo utiliza los árboles de trabajo la aplicación GitHub Copilot?
 ```
 
 ## Resumen y pasos siguientes
